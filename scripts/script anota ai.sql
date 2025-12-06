@@ -30,3 +30,54 @@ SELECT * FROM tb_usuario;
 SELECT * FROM tb_anotacao;
 
 -- inserir os dados nas tabelas
+INSERT INTO tb_usuario(nome_completo, email, senha, data_nasc)
+VALUES
+	(
+		'Joaquim da Silva'
+        ,'joaquim@email.com'
+        ,'123'
+        ,'1992-07-02'
+    )
+    ,(
+		'Maria José'
+        ,'maria@email.com'
+        ,'123'
+        ,'1970-01-10'
+    );
+ 
+SELECT * FROM tb_usuario;
+    
+INSERT INTO tb_anotacao(descricao, data_criacao, data_finalizacao, id_usuario)
+VALUES
+	(
+		'Finalizar o banco de dados Biblio e Anota Aí'
+        ,'2025-10-11'
+        ,'2025-10-18'
+        ,2
+    )
+    ,(
+		'Limpar o banheiro'
+        ,'2025-10-18'
+        ,'2025-10-18'
+        ,1
+	)
+    ,(
+		'Cuidar da crianças'
+        ,'2025-10-18'
+        ,NULL
+        ,2
+    );
+    
+SELECT * FROM tb_anotacao;
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,12 @@
 import express from "express";
 import { sequelize } from "./config/db.js";
+import routesAnotacao from "./routes/anotacaoRoute.js";
 
-const app = express();
+const app = express();//1 
+
+app.use(express.json()); //2
+
+app.use("/", routesAnotacao);
 
 sequelize.authenticate()
     .then(() => console.log("Banco autenticado com sucesso"))
