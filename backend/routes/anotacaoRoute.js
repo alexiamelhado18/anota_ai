@@ -8,7 +8,8 @@ routes
     .get("/anotacao", anotacaoController.listar)
     .get("/anotacao/:id", anotacaoController.obterPorID)
     .post("/anotacao", anotacaoController.criar)
-    .patch("/anotacao/:id", anotacaoController.atualizar); //passamos somente o atributo que queremos atualizar do obj
+    .patch("/anotacao/:id", anotacaoController.atualizar) //passamos somente o atributo que queremos atualizar do obj
     //.put() //passamos o objeto todo para ser atualizado
+    .delete("/anotacao/:id", anotacaoController.deletar);
 
 export default routes;
